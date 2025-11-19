@@ -13,7 +13,7 @@ const Donate = () => {
       <section className="pt-32 pb-16 bg-gradient-to-br from-primary via-accent to-secondary bg-[length:200%_200%] animate-gradient-shift text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Heart size={64} className="mx-auto mb-6" />
+            <Heart size={64} className="mx-auto mb-6 animate-float" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Transform Lives Through Education
             </h1>
@@ -41,9 +41,9 @@ const Donate = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="border-primary/20 text-center">
+            <Card className="border-primary/20 text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
                   <Award className="text-primary" size={32} />
                 </div>
                 <h3 className="font-bold text-2xl text-foreground mb-2">Scholarships</h3>
@@ -53,9 +53,9 @@ const Donate = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-secondary/20 text-center">
+            <Card className="border-secondary/20 text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-float-delayed">
                   <Users className="text-secondary" size={32} />
                 </div>
                 <h3 className="font-bold text-2xl text-foreground mb-2">Mentorship</h3>
@@ -65,9 +65,9 @@ const Donate = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-accent/20 text-center">
+            <Card className="border-accent/20 text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
                   <TrendingUp className="text-accent" size={32} />
                 </div>
                 <h3 className="font-bold text-2xl text-foreground mb-2">Research</h3>
