@@ -15,34 +15,33 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary via-secondary to-accent bg-[length:200%_200%] animate-gradient-shift">
           <img 
             src={heroImage} 
             alt="African students studying together" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Empowering Africa's
-              <span className="text-primary"> Future Leaders</span>
+              <span className="text-white/90"> Future Leaders</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8 drop-shadow">
               Supporting brilliant and financially needy trainees through scholarships, 
               mentorship, and research funding across Africa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/apply">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 w-full sm:w-auto">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 w-full sm:w-auto shadow-lg">
                   Apply Now
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/donate">
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20 w-full sm:w-auto">
                   Support Our Mission
                 </Button>
               </Link>
