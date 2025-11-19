@@ -4,11 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import heroImage from "@/assets/hero-education.jpg";
 import researchImage from "@/assets/research-lab.jpg";
 import graduationImage from "@/assets/graduation-success.jpg";
 
 const Index = () => {
+  const statsSection = useIntersectionObserver();
+  const celtaSection = useIntersectionObserver();
+  const aboutSection = useIntersectionObserver();
+  const programsSection = useIntersectionObserver();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navigation />
@@ -51,7 +57,12 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-card border-y border-border">
+      <section 
+        ref={statsSection.ref}
+        className={`py-16 bg-card border-y border-border transition-all duration-700 ${
+          statsSection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -75,7 +86,12 @@ const Index = () => {
       </section>
 
       {/* CELTA Principles */}
-      <section className="py-20">
+      <section 
+        ref={celtaSection.ref}
+        className={`py-20 transition-all duration-700 ${
+          celtaSection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -151,7 +167,12 @@ const Index = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section 
+        ref={aboutSection.ref}
+        className={`py-20 bg-gradient-to-br from-primary/5 to-secondary/5 transition-all duration-700 ${
+          aboutSection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -195,7 +216,12 @@ const Index = () => {
       </section>
 
       {/* Awards Overview */}
-      <section className="py-20">
+      <section 
+        ref={programsSection.ref}
+        className={`py-20 transition-all duration-700 ${
+          programsSection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
