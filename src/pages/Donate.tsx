@@ -10,7 +10,7 @@ const Donate = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary via-gold to-secondary text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary via-accent to-secondary bg-[length:200%_200%] animate-gradient-shift text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Heart size={64} className="mx-auto mb-6" />
