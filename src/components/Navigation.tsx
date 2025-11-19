@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/celta-trust-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-gold rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CT</span>
-            </div>
+            <img src={logo} alt="Celta Trust Foundation Logo" className="w-12 h-12 object-contain" />
             <div>
               <h1 className="text-xl font-bold text-foreground">Celta Trust</h1>
               <p className="text-xs text-muted-foreground">Foundation</p>
