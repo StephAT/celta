@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/celta-trust-logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,11 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-gold rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">CT</span>
-              </div>
+              <img 
+                src={logo} 
+                alt="Celta Trust Foundation Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <div>
                 <h3 className="font-bold text-foreground">Celta Trust</h3>
                 <p className="text-xs text-muted-foreground">Foundation</p>
