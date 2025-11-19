@@ -99,9 +99,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 hover:border-primary transition-colors">
+            <Card className="border-primary/20 hover:border-primary hover:shadow-lg transition-all">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 animate-float">
                   <BookOpen className="text-primary" size={24} />
                 </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">Education</h3>
@@ -111,9 +111,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 hover:border-primary transition-colors">
+            <Card className="border-primary/20 hover:border-primary hover:shadow-lg transition-all">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 animate-float-delayed">
                   <Award className="text-primary" size={24} />
                 </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">Leadership</h3>
@@ -123,9 +123,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 hover:border-primary transition-colors">
+            <Card className="border-primary/20 hover:border-primary hover:shadow-lg transition-all">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 animate-float">
                   <Users className="text-primary" size={24} />
                 </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">Training</h3>
@@ -135,9 +135,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 hover:border-primary transition-colors">
+            <Card className="border-primary/20 hover:border-primary hover:shadow-lg transition-all">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 animate-float-delayed">
                   <div className="text-primary font-bold text-2xl">A</div>
                 </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">Africans</h3>
