@@ -3,8 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const Donate = () => {
+  const impactSection = useIntersectionObserver();
+  const tiersSection = useIntersectionObserver();
+  const whySection = useIntersectionObserver();
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -29,7 +34,12 @@ const Donate = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="py-16">
+      <section 
+        ref={impactSection.ref}
+        className={`py-16 transition-all duration-700 ${
+          impactSection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -187,7 +197,12 @@ const Donate = () => {
       </section>
 
       {/* Other Ways to Help */}
-      <section className="py-16">
+      <section 
+        ref={whySection.ref}
+        className={`py-16 transition-all duration-700 ${
+          whySection.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
