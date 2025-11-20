@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ApplicationForm from "@/components/ApplicationForm";
 
 const Apply = () => {
   return (
@@ -260,7 +261,26 @@ const Apply = () => {
         </div>
       </section>
 
-      {/* Alert Box */}
+      {/* Application Form Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Application Form
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Complete all sections of the form below. Fields marked with * are required. 
+                Make sure to review your information carefully before submitting.
+              </p>
+            </div>
+            
+            <ApplicationForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -269,27 +289,25 @@ const Apply = () => {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Important Notice</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Need Assistance?</h3>
                     <p className="text-muted-foreground mb-4">
-                      The online application portal will open on <strong>January 10, 2026</strong>. 
-                      Please check back on this page or monitor our website for the application link.
+                      If you encounter any issues while completing your application or have questions 
+                      about the process, our team is here to help.
                     </p>
                     <p className="text-muted-foreground">
-                      For questions about the application process, please contact us at{" "}
-                      <a href="mailto:celtatrust.offices@gmail.com" className="text-primary hover:underline">
+                      Contact us at{" "}
+                      <a href="mailto:celtatrust.offices@gmail.com" className="text-primary hover:underline font-semibold">
                         celtatrust.offices@gmail.com
+                      </a>
+                      {" "}or{" "}
+                      <a href="mailto:celtatrust@outlook.com" className="text-primary hover:underline font-semibold">
+                        celtatrust@outlook.com
                       </a>
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
-
-            <div className="text-center mt-8">
-              <Button size="lg" disabled className="bg-muted text-muted-foreground cursor-not-allowed">
-                Application Portal Opens January 10, 2026
-              </Button>
-            </div>
           </div>
         </div>
       </section>
