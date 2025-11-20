@@ -17,7 +17,7 @@ const Donate = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-primary via-accent to-secondary bg-[length:200%_200%] animate-gradient-shift text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Heart size={64} className="mx-auto mb-6 animate-float" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Transform Lives Through Education
