@@ -30,7 +30,7 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Empowering Africa's
               <span className="text-white/90"> Future Leaders</span>
