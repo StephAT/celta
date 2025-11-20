@@ -59,8 +59,8 @@ export default {
         },
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
-        earth: "hsl(var(--earth))",
-        "earth-light": "hsl(var(--earth-light))",
+        navy: "hsl(var(--navy))",
+        "navy-light": "hsl(var(--navy-light))",
         success: "hsl(var(--success))",
       },
       borderRadius: {

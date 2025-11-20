@@ -72,6 +72,28 @@ const Awards = () => {
                   </div>
 
                   <div>
+                    <h3 className="font-semibold text-foreground mb-3">Named Excellence Awards:</h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <CheckCircle className="text-primary mr-2 mt-1 flex-shrink-0" size={18} />
+                        <span className="text-muted-foreground">Lucas N. Amenga-Etego Excellence Award</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="text-primary mr-2 mt-1 flex-shrink-0" size={18} />
+                        <span className="text-muted-foreground">Kirk A. Rockett Excellence Award</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="text-primary mr-2 mt-1 flex-shrink-0" size={18} />
+                        <span className="text-muted-foreground">Takura Tingbani Excellence Award</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="text-primary mr-2 mt-1 flex-shrink-0" size={18} />
+                        <span className="text-muted-foreground">David Nabegmado Mensah Excellence Award</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
                     <h3 className="font-semibold text-foreground mb-3">Eligibility Requirements:</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">

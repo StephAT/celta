@@ -40,9 +40,9 @@ const Index = () => {
               mentorship, and research funding across Africa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/apply">
+              <Link to="/awards">
                 <Button size="lg" className="bg-white text-primary hover:bg-white/90 w-full sm:w-auto shadow-lg">
-                  Apply Now
+                  Explore Awards
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
