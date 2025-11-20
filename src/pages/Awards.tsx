@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Award, Users, Lightbulb, Plane } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -5,9 +6,32 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AwardsTimeline from "@/components/AwardsTimeline";
+import LoadingSpinner from "@/components/LoadingSpinner";
 import { Link } from "react-router-dom";
 
 const Awards = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate content loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <div className="flex items-center justify-center min-h-[calc(100vh-80px)] pt-20">
+          <LoadingSpinner size="lg" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

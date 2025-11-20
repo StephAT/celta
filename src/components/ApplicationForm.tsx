@@ -12,9 +12,10 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "sonner";
-import { CalendarIcon, Upload, Loader2 } from "lucide-react";
+import { CalendarIcon, Upload } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 const ACCEPTED_FILE_TYPES = ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
@@ -646,7 +647,9 @@ const ApplicationForm = () => {
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <div className="mr-2">
+                  <LoadingSpinner size="sm" />
+                </div>
                 Submitting...
               </>
             ) : (
@@ -655,6 +658,17 @@ const ApplicationForm = () => {
           </Button>
         </div>
       </form>
+
+      {/* Full-page loading overlay */}
+      {isSubmitting && (
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center">
+          <div className="text-center">
+            <LoadingSpinner size="lg" />
+            <p className="mt-4 text-lg text-foreground">Submitting your application...</p>
+            <p className="text-sm text-muted-foreground">Please wait</p>
+          </div>
+        </div>
+      )}
     </Form>
   );
 };
