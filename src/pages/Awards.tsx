@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AwardsTimeline from "@/components/AwardsTimeline";
 import { Link } from "react-router-dom";
 
 const Awards = () => {
@@ -174,6 +175,23 @@ const Awards = () => {
                 </Accordion>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Application Timeline
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              From submission to selection: Your journey to becoming an award recipient
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <AwardsTimeline />
           </div>
         </div>
       </section>
