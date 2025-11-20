@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/celta-trust-logo.png";
+import logo from "@/assets/celta-trust-logo-new.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,8 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Awards", path: "/awards" },
-    { name: "Apply", path: "/apply" },
+    { name: "Governance", path: "/governance" },
+    { name: "Events", path: "/events" },
     { name: "Contact", path: "/contact" },
   ];
 

@@ -9,6 +9,10 @@ import Awards from "./pages/Awards";
 import Apply from "./pages/Apply";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import Governance from "./pages/Governance";
+import Events from "./pages/Events";
+import FAQ from "./pages/FAQ";
+import Policies from "./pages/Policies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +27,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/awards" element={<Awards />} />
+          <Route path="/governance" element={<Governance />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/policies" element={<Policies />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/celta-trust-logo.png";
+import logo from "@/assets/celta-trust-logo-new.jpg";
 
 const Footer = () => {
   return (
@@ -40,8 +40,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/apply" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Apply Now
+                <Link to="/governance" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Governance
+                </Link>
+              </li>
+              <li>
+                <Link to="/events" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Events
                 </Link>
               </li>
               <li>
@@ -58,9 +63,12 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-muted-foreground">
                 <Mail size={16} className="mt-1 flex-shrink-0 text-primary" />
-                <div>
-                  <a href="mailto:celtatrust.offices@gmail.com" className="hover:text-primary transition-colors">
+                <div className="space-y-1">
+                  <a href="mailto:celtatrust.offices@gmail.com" className="hover:text-primary transition-colors block">
                     celtatrust.offices@gmail.com
+                  </a>
+                  <a href="mailto:celtatrust@outlook.com" className="hover:text-primary transition-colors block">
+                    celtatrust@outlook.com
                   </a>
                 </div>
               </li>
@@ -68,6 +76,7 @@ const Footer = () => {
                 <Phone size={16} className="mt-1 flex-shrink-0 text-primary" />
                 <div>
                   <div>West Africa: +233 243 601 178</div>
+                  <div>West Africa: +233 558 017 827</div>
                   <div>East Africa: +254 722 417 961</div>
                   <div>USA: +1 917 500 3485</div>
                 </div>
