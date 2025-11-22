@@ -2,10 +2,8 @@ import { Users, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
 const Governance = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -52,10 +50,7 @@ const Governance = () => {
                       <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                       Dr Kirk Rockett
                     </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Dr Eniyou C. Oriero
-                    </li>
+                    
                   </ul>
                 </div>
               </CardContent>
@@ -143,8 +138,6 @@ const Governance = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Governance;
