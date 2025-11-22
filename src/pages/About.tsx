@@ -1,8 +1,13 @@
 import { Users, Target, History, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import graduationImage from "@/assets/graduation-success.jpg";
+import dominicAmuzuImage from "@/assets/dominic-amuzu.jpg";
+import jeanMensahImage from "@/assets/jean-mensah.jpg";
+import collinsMorangaImage from "@/assets/collins-moranga.jpg";
 
 const About = () => {
   return (
@@ -152,6 +157,166 @@ const About = () => {
                 they wish to amplify in future leaders.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founders Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-primary/20">
+              <CardContent className="pt-8">
+                <div className="flex items-center gap-3 mb-8">
+                  <Users className="text-primary" size={32} />
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Meet Our Founders
+                  </h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Dr. Dominic S. Y. Amuzu */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarImage src={dominicAmuzuImage} alt="Dr. Dominic S. Y. Amuzu" className="object-cover" />
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">DA</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Dominic S. Y. Amuzu</h3>
+                        <p className="text-sm text-muted-foreground">Chair</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Dr. Dominic S. Y. Amuzu</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Dr. Dominic S. Y. Amuzu is a scientist and leader in genomics, genetics, and infectious disease research in West Africa. With extensive experience in academic training, research management, and scientific mentorship, he has played a pivotal role in developing research capacity across the region. As Chair of the Celta Trust Foundation, he brings strategic vision, deep commitment to educational equity, and a passion for nurturing Africa's next generation of leaders and innovators.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  {/* Lawyer Jean-Gladys Mensah */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarImage src={jeanMensahImage} alt="Lawyer Jean-Gladys Mensah" className="object-cover" />
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">JM</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Lawyer Jean-Gladys Mensah</h3>
+                        <p className="text-sm text-muted-foreground">Lead, Legal Affairs</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Lawyer Jean-Gladys Mensah</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Jean Gladys Mensah (Esq.) is an accomplished attorney based in the United States with expertise in legal advocacy, compliance, and governance. She brings a wealth of experience in legal strategy and nonprofit regulation. As Lead for Legal Affairs, she provides oversight and ensures that the Foundation operates with integrity, transparency, and adherence to international legal standards.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  {/* Dr. Collins M. Morang'a */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarImage src={collinsMorangaImage} alt="Dr. Collins M. Morang'a" className="object-cover" />
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">CM</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Collins M. Morang'a</h3>
+                        <p className="text-sm text-muted-foreground">Lead, Research</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Dr. Collins M. Morang'a</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Dr. Collins Misita Morang'a is a distinguished scientist whose work spans molecular biology, genomics, and infectious disease research. His leadership in research training and scientific collaboration has contributed significantly to strengthening scientific capacity across East Africa. As Lead for Research, he guides the Foundation's research funding agenda, innovation programmes, and scientific development initiatives.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  {/* Dr. Anita B. Takura */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">AT</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Anita B. Takura</h3>
+                        <p className="text-sm text-muted-foreground">Lead, Finance</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Dr. Anita B. Takura</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Dr. Anita Bimunka Takura Tingbani is an Environmental Safeguards Specialist with the World Bank, where she has contributed to major investment-and-development projects on the African continent. Her work has focused on ensuring sound environmental and social risk management, regulatory compliance, and sustainable development practices in large-scale programmes. With her deep expertise in environmental governance, financial oversight, and development policy, Dr Takura brings a vital perspective to the Celta Trust Foundation's leadership. As Lead for Finance (UK), she ensures robust fiscal stewardship, sustainable resource allocation, and financial mechanisms that support the Foundation's mission of empowering brilliant and financially needy trainees across Africa.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  {/* Dr. Nancy K. Nyakoe */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">NN</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Nancy K. Nyakoe</h3>
+                        <p className="text-sm text-muted-foreground">Lead, Industry</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Dr. Nancy K. Nyakoe</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Dr. Nancy Nyakoe is a scientist and industry professional with a strong background in biotechnology, applied research, and scientific commercialization. With experience linking academia, industry, and innovation ecosystems, she leads initiatives that connect trainees with industrial opportunities. As Lead for Industry, she fosters partnerships that enhance employability, industry training, and innovation-driven careers.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  {/* Dr. Ohene A. Bosompem */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
+                        <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">OB</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Ohene A. Bosompem</h3>
+                        <p className="text-sm text-muted-foreground">Lead, Environment & Climate Change</p>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">Dr. Ohene A. Bosompem</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Dr. Ohene A. Bosompem is an environmental scientist specializing in ecological systems, climate resilience, and environmental health. His work addresses the intersection of environmental sustainability and public wellbeing. As Lead for Environment & Climate Change, he supports programmes that promote environmental awareness, sustainable development, and climate-conscious research across Africa.
+                        </p>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
