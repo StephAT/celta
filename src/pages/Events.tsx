@@ -3,6 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import amengaEtegoImage from "@/assets/amenga-etego-promotion.jpg";
+import awandareAward1 from "@/assets/awandare-award-1.jpg";
+import awandareAward2 from "@/assets/awandare-award-2.jpg";
+import awandareAward3 from "@/assets/awandare-award-3.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Events = () => {
   return (
@@ -29,11 +39,34 @@ const Events = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Prof. Awandare Award */}
             <Card className="border-primary/20 shadow-lg overflow-hidden">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Calendar className="mx-auto mb-4 text-muted-foreground" size={48} />
-                  <p className="text-sm text-muted-foreground">Event Photo Coming Soon</p>
-                </div>
+              <div className="aspect-video bg-muted overflow-hidden">
+                <Carousel className="w-full h-full">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <img 
+                        src={awandareAward1} 
+                        alt="Prof. Gordon A. Awandare with Bailey K. Ashford Medal" 
+                        className="w-full h-full object-cover"
+                      />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img 
+                        src={awandareAward2} 
+                        alt="Prof. Awandare receiving award at ASTMH ceremony" 
+                        className="w-full h-full object-cover"
+                      />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img 
+                        src={awandareAward3} 
+                        alt="Prof. Awandare accepting Bailey K. Ashford Medal" 
+                        className="w-full h-full object-cover"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
               </div>
               <CardContent className="pt-8">
                 <div className="flex items-center gap-3 mb-6">
