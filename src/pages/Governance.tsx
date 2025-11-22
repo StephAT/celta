@@ -139,7 +139,7 @@ const Governance = () => {
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">NN</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Nancy Nyakoe</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Nancy K. Nyakoe</h3>
                     <p className="text-sm text-muted-foreground mb-2">Lead, Industry</p>
                     <p className="text-xs text-muted-foreground/70">East Africa</p>
                   </div>
