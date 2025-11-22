@@ -22,11 +22,129 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Official Launch */}
+      {/* Latest News */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Card className="border-primary/20 shadow-lg mb-12">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {/* Prof. Awandare Award */}
+            <Card className="border-primary/20 shadow-lg overflow-hidden">
+              <div className="aspect-video bg-muted flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Calendar className="mx-auto mb-4 text-muted-foreground" size={48} />
+                  <p className="text-sm text-muted-foreground">Event Photo Coming Soon</p>
+                </div>
+              </div>
+              <CardContent className="pt-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <Calendar className="text-primary" size={32} />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">November 25, 2025</p>
+                    <p className="text-sm text-muted-foreground flex items-center gap-1">
+                      <MapPin size={14} />
+                      Toronto, Canada
+                    </p>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                  Prof. Gordon A. Awandare Receives Prestigious Bailey K. Ashford Medal for Global Health Leadership
+                </h2>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    We are honored to share the exciting news that Professor Gordon A. Awandare, Pro-Vice Chancellor for Academic & Student Affairs at the University of Ghana and Founding Director of WACCBIP, has been awarded the 2025 Bailey K. Ashford Medal by the American Society of Tropical Medicine & Hygiene (ASTMH).
+                  </p>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Recognizing Excellence in Tropical Medicine</h3>
+                    <p>
+                      The Bailey K. Ashford Medal is one of ASTMH's highest honors, awarded to individuals in "early to mid-career" who have made distinguished contributions to tropical medicine. Prof. Awandare is the only African scientist among the 2025 recipients, underscoring the exceptional global impact of his work.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">A Trailblazer in Malaria Research and Scientific Leadership</h3>
+                    <p>
+                      Prof. Awandare's pioneering research has focused on the biology, immunology, and pathogenesis of the malaria parasite. His work has significantly advanced our understanding of malaria's molecular mechanisms, contributing to innovations in diagnosis, treatment, and vaccine development.
+                    </p>
+                    <p className="mt-2">
+                      Beyond his scientific contributions, Prof. Awandare is widely celebrated for his transformative leadership through the West African Centre for Cell Biology of Infectious Pathogens (WACCBIP). Since founding WACCBIP in 2014, he has nurtured a vibrant community of young African scientists, guiding the institution to become a global reference point in infectious disease research, postgraduate training, and research infrastructure.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Acknowledging African-Led Science</h3>
+                    <p>
+                      In announcing the award, the ASTMH Medals Committee praised Prof. Awandare for his "important contributions to the understanding and control of tropical diseases" and for tirelessly supporting scientific progress for people in need across the world. Prof. Awandare, in his acceptance remarks, dedicated the award to the hundreds of young African scientists who have shared in his vision of building robust science capacity on the continent.
+                    </p>
+                    <p className="mt-2 italic text-foreground">
+                      "This honour is a tribute to their talent, passion, and belief that world-class science can be done in Africa, led by Africans," he said.
+                    </p>
+                    <p className="mt-2">
+                      This accolade is not just a personal achievement for Prof. Awandare—it is a powerful endorsement of African-led research and innovation. It highlights the importance of sustaining investment in African science, strengthening local institutions, and empowering researchers who are addressing the continent's most pressing health challenges.
+                    </p>
+                    <p className="mt-2">
+                      As global health priorities evolve, Prof. Awandare's recognition reinforces the message that Africa must be a leader; not just a beneficiary; in scientific discovery and global health solutions.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Prof. Amenga-Etego Promotion */}
+            <Card className="border-secondary/20 shadow-lg overflow-hidden">
+              <div className="aspect-video bg-muted flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Calendar className="mx-auto mb-4 text-muted-foreground" size={48} />
+                  <p className="text-sm text-muted-foreground">Event Photo Coming Soon</p>
+                </div>
+              </div>
+              <CardContent className="pt-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <Calendar className="text-primary" size={32} />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">November 11, 2025</p>
+                    <p className="text-sm text-muted-foreground flex items-center gap-1">
+                      <MapPin size={14} />
+                      Accra, Ghana
+                    </p>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                  Announcement: Prof Lucas N. Amenga-Etego Promoted to Associate Professor of Genomics and Genetics
+                </h2>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    The Celta Trust Foundation is delighted to congratulate Prof Lucas N. Amenga-Etego on his well-deserved promotion to the rank of Associate Professor of Genomics and Genetics. This milestone reflects his exceptional contributions to scientific research, capacity building, and leadership in the fields of genomics, molecular biology, and infectious diseases.
+                  </p>
+
+                  <p>
+                    Prof Amenga-Etego has built a distinguished career rooted in scientific excellence, innovation, and mentorship. His pioneering research has advanced our understanding of genomic diversity, pathogen biology, and the molecular drivers of disease across African populations. Through his work, he continues to strengthen the bridge between cutting-edge genomic science and real-world public health impact.
+                  </p>
+
+                  <p>
+                    Beyond his scientific contributions, Prof Amenga-Etego is widely respected for his dedication to nurturing the next generation of African scientists. His leadership in training young researchers, guiding graduate students, and promoting equitable scientific collaboration has made him an influential figure within the African scientific community and beyond.
+                  </p>
+
+                  <p>
+                    This promotion recognizes not only his academic achievements but also his commitment to advancing science in Africa, expanding research capacity, and inspiring excellence in all those he mentors. His work continues to bring visibility and prestige to African-led scientific research on the global stage.
+                  </p>
+
+                  <p>
+                    The Celta Trust Foundation celebrates this milestone as a testament to his enduring passion, integrity, and impact. His journey is a powerful reminder that when opportunity meets dedication, the results uplift not just an individual, but an entire scientific ecosystem.
+                  </p>
+
+                  <p className="font-semibold text-foreground">
+                    We extend our warmest congratulations to Associate Professor Lucas N. Amenga-Etego and look forward to the continued breakthroughs, mentorship, and leadership he will bring to the field of genomics and genetics.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Official Launch */}
+            <Card className="border-accent/20 shadow-lg">
               <CardContent className="pt-8">
                 <div className="flex items-center gap-3 mb-6">
                   <Calendar className="text-primary" size={32} />
@@ -69,7 +187,7 @@ const Events = () => {
             </Card>
 
             {/* First Award Cycle */}
-            <Card className="border-secondary/20 shadow-lg">
+            <Card className="border-muted shadow-lg">
               <CardContent className="pt-8">
                 <h3 className="text-xl font-bold text-foreground mb-4">First Award Cycle</h3>
                 
