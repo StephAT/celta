@@ -6,32 +6,24 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ApplicationForm from "@/components/ApplicationForm";
 import LoadingSpinner from "@/components/LoadingSpinner";
-
 const Apply = () => {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     // Simulate content loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 800);
-
     return () => clearTimeout(timer);
   }, []);
-
   if (isLoading) {
-    return (
-      <div className="min-h-screen bg-background">
+    return <div className="min-h-screen bg-background">
         <Navigation />
         <div className="flex items-center justify-center min-h-[calc(100vh-80px)] pt-20">
           <LoadingSpinner size="lg" />
         </div>
-      </div>
-    );
+      </div>;
   }
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -62,8 +54,8 @@ const Apply = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="border-primary/30">
                 <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">Jan 10</div>
-                  <div className="text-sm text-muted-foreground mb-4">2026</div>
+                  <div className="text-4xl font-bold text-primary mb-2"> Dec 21 </div>
+                  <div className="text-sm text-muted-foreground mb-4">2025</div>
                   <h3 className="font-semibold text-foreground">Applications Open</h3>
                   <p className="text-sm text-muted-foreground mt-2">
                     Online application portal opens for all award categories
@@ -73,7 +65,7 @@ const Apply = () => {
 
               <Card className="border-accent/30">
                 <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-accent mb-2">Mar 10</div>
+                  <div className="text-4xl font-bold text-accent mb-2"> Feb 1</div>
                   <div className="text-sm text-muted-foreground mb-4">2026</div>
                   <h3 className="font-semibold text-foreground">Applications Close</h3>
                   <p className="text-sm text-muted-foreground mt-2">
@@ -337,8 +329,6 @@ const Apply = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Apply;
