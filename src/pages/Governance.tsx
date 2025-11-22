@@ -30,32 +30,48 @@ const Governance = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="border-primary/20 mb-12">
               <CardContent className="pt-8">
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-8">
                   <Building2 className="text-primary" size={32} />
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                     Advisory Committee
                   </h2>
                 </div>
-                <div className="space-y-3 text-muted-foreground">
-                  <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Prof Gordon Awandare
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Dr Victoria Cornelius (Simpson)
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Prof Lucas Amenga-Etego
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Dr Kirk Rockett
-                    </li>
-                    
-                  </ul>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Prof Gordon Awandare */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">GA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground">Prof Gordon Awandare</h3>
+                    <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
+                  </div>
+
+                  {/* Dr Victoria Cornelius */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">VC</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground">Dr Victoria Cornelius (Simpson)</h3>
+                    <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
+                  </div>
+
+                  {/* Prof Lucas Amenga-Etego */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">LA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground">Prof Lucas Amenga-Etego</h3>
+                    <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
+                  </div>
+
+                  {/* Dr Kirk Rockett */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">KR</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground">Dr Kirk Rockett</h3>
+                    <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
