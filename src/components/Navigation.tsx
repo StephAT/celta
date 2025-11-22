@@ -31,14 +31,14 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary-foreground/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Celta Trust Foundation Logo" className="w-28 h-28 object-contain" />
             <div>
-              <h1 className="text-xl font-bold text-foreground">Celta Trust</h1>
-              <p className="text-xs text-muted-foreground">Foundation</p>
+              <h1 className="text-xl font-bold text-primary-foreground">Celta Trust</h1>
+              <p className="text-xs text-primary-foreground/70">Foundation</p>
             </div>
           </Link>
 
@@ -52,8 +52,8 @@ const Navigation = () => {
                     className={cn(
                       "px-4 py-2 rounded-md text-sm font-medium transition-colors",
                       isActive("/")
-                        ? "text-accent bg-accent/10"
-                        : "text-foreground hover:text-accent hover:bg-accent/10"
+                        ? "text-accent bg-primary-foreground/10"
+                        : "text-primary-foreground hover:text-accent hover:bg-primary-foreground/10"
                     )}
                   >
                     Home
@@ -62,7 +62,7 @@ const Navigation = () => {
 
                 {/* About Us Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-accent hover:bg-accent/10 data-[state=open]:bg-accent/10">
+                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
                     About Us
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -99,7 +99,7 @@ const Navigation = () => {
 
                 {/* Awards Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-accent hover:bg-accent/10 data-[state=open]:bg-accent/10">
+                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
                     Awards
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -140,8 +140,8 @@ const Navigation = () => {
                     className={cn(
                       "px-4 py-2 rounded-md text-sm font-medium transition-colors",
                       isActive("/events")
-                        ? "text-accent bg-accent/10"
-                        : "text-foreground hover:text-accent hover:bg-accent/10"
+                        ? "text-accent bg-primary-foreground/10"
+                        : "text-primary-foreground hover:text-accent hover:bg-primary-foreground/10"
                     )}
                   >
                     Events
@@ -150,7 +150,7 @@ const Navigation = () => {
 
                 {/* Resources Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-accent hover:bg-accent/10 data-[state=open]:bg-accent/10">
+                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -191,8 +191,8 @@ const Navigation = () => {
                     className={cn(
                       "px-4 py-2 rounded-md text-sm font-medium transition-colors",
                       isActive("/contact")
-                        ? "text-accent bg-accent/10"
-                        : "text-foreground hover:text-accent hover:bg-accent/10"
+                        ? "text-accent bg-primary-foreground/10"
+                        : "text-primary-foreground hover:text-accent hover:bg-primary-foreground/10"
                     )}
                   >
                     Contact
@@ -211,7 +211,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:bg-accent/10 rounded-md"
+            className="md:hidden p-2 text-primary-foreground hover:bg-primary-foreground/10 rounded-md"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -219,7 +219,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-2 bg-background border-b border-border">
+          <div className="md:hidden py-4 space-y-2 bg-primary">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -228,8 +228,8 @@ const Navigation = () => {
                 className={cn(
                   "block px-4 py-3 rounded-md text-sm font-medium transition-colors",
                   isActive(item.path)
-                    ? "text-accent bg-accent/10"
-                    : "text-foreground hover:text-accent hover:bg-accent/10"
+                    ? "text-accent bg-primary-foreground/10"
+                    : "text-primary-foreground hover:text-accent hover:bg-primary-foreground/10"
                 )}
               >
                 {item.name}
