@@ -1,7 +1,11 @@
 import { Users, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import dominicAmuzuImage from "@/assets/dominic-amuzu.jpg";
+import jeanMensahImage from "@/assets/jean-mensah.jpg";
+import collinsMorangaImage from "@/assets/collins-moranga.jpg";
 const Governance = () => {
   return <div className="min-h-screen bg-background">
       <Navigation />
@@ -72,9 +76,10 @@ const Governance = () => {
                 </div>
                 <div className="grid gap-6">
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      DA
-                    </div>
+                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
+                      <AvatarImage src={dominicAmuzuImage} alt="Dr Dominic S. Y. Amuzu" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">DA</AvatarFallback>
+                    </Avatar>
                     <div>
                       <h3 className="font-semibold text-foreground">Dr Dominic S. Y. Amuzu</h3>
                       <p className="text-sm text-muted-foreground">Chair (West Africa)</p>
@@ -82,9 +87,10 @@ const Governance = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      JM
-                    </div>
+                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
+                      <AvatarImage src={jeanMensahImage} alt="Lawyer Jean Gladys Mensah" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">JM</AvatarFallback>
+                    </Avatar>
                     <div>
                       <h3 className="font-semibold text-foreground">Lawyer Jean Gladys Mensah</h3>
                       <p className="text-sm text-muted-foreground">Lead, Legal Affairs (USA)</p>
@@ -92,9 +98,10 @@ const Governance = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      CM
-                    </div>
+                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
+                      <AvatarImage src={collinsMorangaImage} alt="Dr Collins Morang'a" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">CM</AvatarFallback>
+                    </Avatar>
                     <div>
                       <h3 className="font-semibold text-foreground">Dr Collins Morang'a</h3>
                       <p className="text-sm text-muted-foreground">Lead, Research (East Africa)</p>
