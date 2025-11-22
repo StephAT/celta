@@ -47,7 +47,7 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/donate">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20 w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/20 w-full sm:w-auto">
                   Support Our Mission
                 </Button>
               </Link>
