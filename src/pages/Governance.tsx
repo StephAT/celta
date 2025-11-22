@@ -74,68 +74,68 @@ const Governance = () => {
                     </p>
                   </div>
                 </div>
-                <div className="grid gap-6">
-                  <div className="flex items-start">
-                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
-                      <AvatarImage src={dominicAmuzuImage} alt="Dr Dominic S. Y. Amuzu" />
-                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">DA</AvatarFallback>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Dr Dominic S. Y. Amuzu */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={dominicAmuzuImage} alt="Dr Dominic S. Y. Amuzu" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">DA</AvatarFallback>
                     </Avatar>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dr Dominic S. Y. Amuzu</h3>
-                      <p className="text-sm text-muted-foreground">Chair (West Africa)</p>
-                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Dominic S. Y. Amuzu</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Chair</p>
+                    <p className="text-xs text-muted-foreground/70">West Africa</p>
                   </div>
 
-                  <div className="flex items-start">
-                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
-                      <AvatarImage src={jeanMensahImage} alt="Lawyer Jean Gladys Mensah" />
-                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">JM</AvatarFallback>
+                  {/* Lawyer Jean Gladys Mensah */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={jeanMensahImage} alt="Lawyer Jean Gladys Mensah" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">JM</AvatarFallback>
                     </Avatar>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Lawyer Jean Gladys Mensah</h3>
-                      <p className="text-sm text-muted-foreground">Lead, Legal Affairs (USA)</p>
-                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Lawyer Jean Gladys Mensah</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Lead, Legal Affairs</p>
+                    <p className="text-xs text-muted-foreground/70">USA</p>
                   </div>
 
-                  <div className="flex items-start">
-                    <Avatar className="w-12 h-12 mr-4 flex-shrink-0">
-                      <AvatarImage src={collinsMorangaImage} alt="Dr Collins Morang'a" />
-                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white font-bold">CM</AvatarFallback>
+                  {/* Dr Collins Morang'a */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={collinsMorangaImage} alt="Dr Collins Morang'a" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">CM</AvatarFallback>
                     </Avatar>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dr Collins Morang'a</h3>
-                      <p className="text-sm text-muted-foreground">Lead, Research (East Africa)</p>
-                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Collins Morang'a</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Lead, Research</p>
+                    <p className="text-xs text-muted-foreground/70">East Africa</p>
                   </div>
 
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      AT
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dr Anita Takura</h3>
-                      <p className="text-sm text-muted-foreground">Lead, Finance (UK)</p>
-                    </div>
+                  {/* Dr Anita Takura */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">AT</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Anita Takura</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Lead, Finance</p>
+                    <p className="text-xs text-muted-foreground/70">UK</p>
                   </div>
 
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      NN
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dr Nancy Nyakoe</h3>
-                      <p className="text-sm text-muted-foreground">Lead, Industry (East Africa)</p>
-                    </div>
+                  {/* Dr Nancy Nyakoe */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">NN</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Nancy Nyakoe</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Lead, Industry</p>
+                    <p className="text-xs text-muted-foreground/70">East Africa</p>
                   </div>
 
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
-                      AB
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dr Assa Bosompem</h3>
-                      <p className="text-sm text-muted-foreground">Lead, Environment & Climate Change (West Africa)</p>
-                    </div>
+                  {/* Dr Assa Bosompem */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">AB</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Dr Assa Bosompem</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Lead, Environment & Climate Change</p>
+                    <p className="text-xs text-muted-foreground/70">West Africa</p>
                   </div>
                 </div>
               </CardContent>
