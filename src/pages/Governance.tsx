@@ -160,6 +160,70 @@ const Governance = () => {
         </div>
       </section>
 
+      {/* Management Team */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-primary/20">
+              <CardContent className="pt-8">
+                <div className="flex items-center gap-3 mb-8">
+                  <Users className="text-primary" size={32} />
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Our Team
+                  </h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Mrs. Sika Menka */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">SM</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Mrs. Sika Menka</h3>
+                    <p className="text-sm text-muted-foreground">Chair of Management</p>
+                  </div>
+
+                  {/* Ms Jessica Arthur */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">JA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Ms Jessica Arthur</h3>
+                    <p className="text-sm text-muted-foreground">Secretary</p>
+                  </div>
+
+                  {/* Ms Christabel S. Atsu-Dorgbadzi */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">CA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Ms Christabel S. Atsu-Dorgbadzi</h3>
+                    <p className="text-sm text-muted-foreground">Communications and Media</p>
+                  </div>
+
+                  {/* Mr Stephen Tetteh Addo */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">SA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Mr Stephen Tetteh Addo</h3>
+                    <p className="text-sm text-muted-foreground">ICT Support</p>
+                  </div>
+
+                  {/* Mr Yenana Akpotosu-Nartey */}
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
+                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">YA</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Mr Yenana Akpotosu-Nartey</h3>
+                    <p className="text-sm text-muted-foreground">Data Manager</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>;
 };
