@@ -13,8 +13,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const Events = () => {
+  const plugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -40,7 +46,13 @@ const Events = () => {
             {/* Prof. Awandare Award */}
             <Card className="border-primary/20 shadow-lg overflow-hidden">
               <div className="aspect-video bg-muted overflow-hidden">
-                <Carousel className="w-full h-full">
+                <Carousel 
+                  className="w-full h-full"
+                  plugins={[plugin.current]}
+                  opts={{
+                    loop: true,
+                  }}
+                >
                   <CarouselContent>
                     <CarouselItem>
                       <img 
