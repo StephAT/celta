@@ -2,6 +2,7 @@ import { Calendar, MapPin, Mail, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import amengaEtegoImage from "@/assets/amenga-etego-promotion.jpg";
 
 const Events = () => {
   return (
@@ -93,11 +94,12 @@ const Events = () => {
 
             {/* Prof. Amenga-Etego Promotion */}
             <Card className="border-secondary/20 shadow-lg overflow-hidden">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Calendar className="mx-auto mb-4 text-muted-foreground" size={48} />
-                  <p className="text-sm text-muted-foreground">Event Photo Coming Soon</p>
-                </div>
+              <div className="aspect-video bg-muted overflow-hidden">
+                <img 
+                  src={amengaEtegoImage} 
+                  alt="Prof Lucas N. Amenga-Etego Promotion Congratulations" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <CardContent className="pt-8">
                 <div className="flex items-center gap-3 mb-6">
