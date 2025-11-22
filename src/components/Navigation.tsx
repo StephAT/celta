@@ -38,7 +38,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Celta Trust Foundation Logo" className="w-48 h-auto object-contain" />
+            <img src={logo} alt="Celta Trust Foundation Logo" className="h-16 w-auto object-contain" />
             
           </Link>
 
