@@ -8,6 +8,8 @@ import graduationImage from "@/assets/graduation-success.jpg";
 import dominicAmuzuImage from "@/assets/dominic-amuzu.jpg";
 import jeanMensahImage from "@/assets/jean-mensah.jpg";
 import collinsMorangaImage from "@/assets/collins-moranga.jpg";
+import nancyNyakoeImage from "@/assets/nancy-nyakoe.jpg";
+import oheneBosompemImage from "@/assets/ohene-bosompem.jpg";
 
 const About = () => {
   return (
@@ -274,6 +276,7 @@ const About = () => {
                     <DialogTrigger asChild>
                       <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
                         <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarImage src={nancyNyakoeImage} alt="Dr. Nancy K. Nyakoe" className="object-cover" />
                           <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">NN</AvatarFallback>
                         </Avatar>
                         <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Nancy K. Nyakoe</h3>
@@ -297,6 +300,7 @@ const About = () => {
                     <DialogTrigger asChild>
                       <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors cursor-pointer">
                         <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                          <AvatarImage src={oheneBosompemImage} alt="Dr. Ohene A. Bosompem" className="object-cover" />
                           <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">OB</AvatarFallback>
                         </Avatar>
                         <h3 className="text-lg font-semibold text-foreground mb-1">Dr. Ohene A. Bosompem</h3>
