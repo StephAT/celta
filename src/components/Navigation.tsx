@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/celta-trust-logo-new.jpg";
+import logo from "@/assets/celta-trust-logo-full.jpg";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
