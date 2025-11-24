@@ -7,7 +7,7 @@ import dominicAmuzuImage from "@/assets/dominic-amuzu.jpg";
 import jeanMensahImage from "@/assets/jean-mensah.jpg";
 import collinsMorangaImage from "@/assets/collins-moranga.jpg";
 import nancyNyakoeImage from "@/assets/nancy-nyakoe.jpg";
-import oheneBosompemImage from "@/assets/ohene-bosompem.jpg";
+import oheneBosompemImage from "@/assets/ohene-bosompem-new.jpg";
 import anitaTakuraImage from "@/assets/anita-takura.jpg";
 import sikaMenkaImage from "@/assets/sika-menka.jpg";
 import gordonAwandareImage from "@/assets/gordon-awandare.png";
