@@ -186,7 +186,7 @@ const Governance = () => {
                       <AvatarImage src={sikaMenkaImage} alt="Mrs. Sika Menka" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">SM</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Mrs. Sika Menka</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Sika Menka</h3>
                     <p className="text-sm text-muted-foreground">Chair of Management</p>
                   </div>
 
@@ -195,7 +195,7 @@ const Governance = () => {
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">JA</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Ms Jessica Arthur</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Jessica Arthur</h3>
                     <p className="text-sm text-muted-foreground">Secretary</p>
                   </div>
 
@@ -204,7 +204,7 @@ const Governance = () => {
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">CA</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Ms Christabel S. Atsu-Dorgbadzi</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1"> Christabel S. Atsu-Dorgbadzi</h3>
                     <p className="text-sm text-muted-foreground">Communications and Media</p>
                   </div>
 
@@ -213,7 +213,7 @@ const Governance = () => {
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">SA</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Mr Stephen Tetteh Addo</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Stephen Tetteh Addo</h3>
                     <p className="text-sm text-muted-foreground">ICT Support</p>
                   </div>
 
@@ -222,7 +222,7 @@ const Governance = () => {
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">YA</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Mr Yenana Akpotosu-Nartey</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">Yenana Akpotosu-Nartey</h3>
                     <p className="text-sm text-muted-foreground">Data Manager</p>
                   </div>
                 </div>
