@@ -30,6 +30,9 @@ const Navigation = () => {
     name: "Policies",
     path: "/policies"
   }, {
+    name: "Gallery",
+    path: "/gallery"
+  }, {
     name: "Contact",
     path: "/contact"
   }];
@@ -143,6 +146,16 @@ const Navigation = () => {
                             <div className="text-sm font-medium leading-none">Policies</div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               Our policies and guidelines
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link to="/gallery" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent/10 focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none">Gallery</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              View photos from our events
                             </p>
                           </Link>
                         </NavigationMenuLink>
