@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
@@ -8,6 +8,7 @@ import logo from "@/assets/celta-trust-logo-full.jpg";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const navItems = [{
     name: "Home",
     path: "/"
@@ -57,7 +58,10 @@ const Navigation = () => {
 
                 {/* About Us Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
+                  <NavigationMenuTrigger 
+                    className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10"
+                    onClick={() => navigate('/about')}
+                  >
                     About Us
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -88,7 +92,10 @@ const Navigation = () => {
 
                 {/* Opportunities & Supports Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
+                  <NavigationMenuTrigger 
+                    className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10"
+                    onClick={() => navigate('/awards')}
+                  >
                     Opportunities & Supports
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -125,7 +132,10 @@ const Navigation = () => {
 
                 {/* Resources Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
+                  <NavigationMenuTrigger 
+                    className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10"
+                    onClick={() => navigate('/faq')}
+                  >
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
