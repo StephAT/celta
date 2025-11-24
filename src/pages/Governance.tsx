@@ -10,6 +10,10 @@ import nancyNyakoeImage from "@/assets/nancy-nyakoe.jpg";
 import oheneBosompemImage from "@/assets/ohene-bosompem.jpg";
 import anitaTakuraImage from "@/assets/anita-takura.jpg";
 import sikaMenkaImage from "@/assets/sika-menka.jpg";
+import gordonAwandareImage from "@/assets/gordon-awandare.png";
+import vikkiCorneliusImage from "@/assets/vikki-cornelius.png";
+import lucasAmengaEtegoImage from "@/assets/lucas-amenga-etego.png";
+import kirkRockettImage from "@/assets/kirk-rockett.png";
 const Governance = () => {
   return <div className="min-h-screen bg-background">
       <Navigation />
@@ -44,6 +48,7 @@ const Governance = () => {
                   {/* Prof Gordon Awandare */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={gordonAwandareImage} alt="Prof Gordon Awandare" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">GA</AvatarFallback>
                     </Avatar>
                     <h3 className="text-lg font-semibold text-foreground">Prof Gordon Awandare</h3>
@@ -53,6 +58,7 @@ const Governance = () => {
                   {/* Dr Victoria Cornelius */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={vikkiCorneliusImage} alt="Dr Vikki Cornelius" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">VC</AvatarFallback>
                     </Avatar>
                     <h3 className="text-lg font-semibold text-foreground">Dr Vikki Cornelius                    </h3>
@@ -62,6 +68,7 @@ const Governance = () => {
                   {/* Prof Lucas Amenga-Etego */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={lucasAmengaEtegoImage} alt="Prof Lucas Amenga-Etego" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">LA</AvatarFallback>
                     </Avatar>
                     <h3 className="text-lg font-semibold text-foreground">Prof Lucas Amenga-Etego</h3>
@@ -71,6 +78,7 @@ const Governance = () => {
                   {/* Dr Kirk Rockett */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={kirkRockettImage} alt="Dr Kirk Rockett" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">KR</AvatarFallback>
                     </Avatar>
                     <h3 className="text-lg font-semibold text-foreground">Dr Kirk Rockett</h3>
