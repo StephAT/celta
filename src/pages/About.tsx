@@ -22,7 +22,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About Celta Trust Foundation
+              About Us
             </h1>
             <p className="text-xl text-muted-foreground">
               A philanthropic organisation committed to advancing education, leadership, 
