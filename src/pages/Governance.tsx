@@ -9,6 +9,7 @@ import collinsMorangaImage from "@/assets/collins-moranga.jpg";
 import nancyNyakoeImage from "@/assets/nancy-nyakoe.jpg";
 import oheneBosompemImage from "@/assets/ohene-bosompem.jpg";
 import anitaTakuraImage from "@/assets/anita-takura.jpg";
+import sikaMenkaImage from "@/assets/sika-menka.jpg";
 const Governance = () => {
   return <div className="min-h-screen bg-background">
       <Navigation />
@@ -182,6 +183,7 @@ const Governance = () => {
                   {/* Mrs. Sika Menka */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
+                      <AvatarImage src={sikaMenkaImage} alt="Mrs. Sika Menka" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">SM</AvatarFallback>
                     </Avatar>
                     <h3 className="text-lg font-semibold text-foreground mb-1">Mrs. Sika Menka</h3>
