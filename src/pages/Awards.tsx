@@ -72,7 +72,7 @@ const Awards = () => {
                       Gordon A. Awandare Science Leadership Award
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Celebrates an individual who demonstrates visionary scientific leadership, outstanding research contributions, and a strong commitment to mentorship and capacity building.
+                      The Gordon A. Awandare Science Leadership Award celebrates the spirit of visionary leadership and relentless dedication exemplified by Professor Gordon Awandare. It honors those who drive scientific innovation and transformative research, inspiring communities and empowering Africa's future in science.
                     </AccordionContent>
                   </AccordionItem>
 
