@@ -15,7 +15,7 @@ const Navigation = () => {
     name: "About Us",
     path: "/about"
   }, {
-    name: "Awards",
+    name: "Opportunities & Supports",
     path: "/awards"
   }, {
     name: "Governance",
@@ -86,10 +86,10 @@ const Navigation = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* Awards Dropdown */}
+                {/* Opportunities & Supports Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 data-[state=open]:bg-primary-foreground/10">
-                    Awards
+                    Opportunities & Supports
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 bg-card">
