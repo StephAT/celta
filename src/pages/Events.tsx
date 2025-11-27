@@ -30,7 +30,7 @@ const Events = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Events & News
+              News & Events
             </h1>
             <p className="text-xl text-muted-foreground">
               Stay updated on our latest activities, announcements, and milestones
