@@ -61,7 +61,7 @@ const Governance = () => {
                       <AvatarImage src={vikkiCorneliusImage} alt="Dr Vikki Cornelius" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">VC</AvatarFallback>
                     </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground">Dr Vikki Cornelius                    </h3>
+                    <h3 className="text-lg font-semibold text-foreground">Dr Vikki Cornelius</h3>
                     <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
                   </div>
 
