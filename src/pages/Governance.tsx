@@ -198,15 +198,6 @@ const Governance = () => {
                     <p className="text-sm text-muted-foreground">Chair of Management</p>
                   </div>
 
-                  {/* Ms Jessica Arthur */}
-                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
-                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
-                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">JA</AvatarFallback>
-                    </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Jessica Arthur</h3>
-                    <p className="text-sm text-muted-foreground">Secretary</p>
-                  </div>
-
                   {/* Ms Christabel S. Atsu-Dorgbadzi */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
