@@ -113,7 +113,7 @@ const Awards = () => {
                       Lucas N. Amenga-Etego Excellence Award
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      This award, created in honor of Dr. Lucas Amenga-Etego, Research Fellow at WACCBIP, acknowledges exceptional contributions to malaria research, genetic epidemiology, and bioinformatics. It celebrates innovation, leadership, and a commitment to improving understanding of infectious diseases in Africa.
+                      This award, created in honor of Prof. Lucas Amenga-Etego, Research Fellow at WACCBIP, acknowledges exceptional contributions to malaria research, genetic epidemiology, and bioinformatics. It celebrates innovation, leadership, and a commitment to improving understanding of infectious diseases in Africa.
                     </AccordionContent>
                   </AccordionItem>
 
