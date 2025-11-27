@@ -33,7 +33,7 @@ const Index = () => {
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Empowering Africa's
-              <span className="text-white/90"> Future Leaders</span>
+              <span className="text-white/90"> Future Leaders in Science and Development</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 drop-shadow">
               Supporting brilliant and financially needy trainees through scholarships, 
