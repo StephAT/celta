@@ -75,6 +75,20 @@ const Awards = () => {
                       The Gordon A. Awandare Science Leadership Award celebrates the spirit of visionary leadership and relentless dedication exemplified by Professor Gordon Awandare. It honors those who drive scientific innovation and transformative research, inspiring communities and empowering Africa's future in science.
                     </AccordionContent>
                   </AccordionItem>
+
+                  <AccordionItem value="kwiatkowski">
+                    <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary">
+                      Dominic P. Kwiatkowski Science Leadership Award
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Honours leaders whose work has significantly advanced genomic science, data-driven research, and international scientific collaboration.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </section>
 
       {/* Excellence Awards */}
