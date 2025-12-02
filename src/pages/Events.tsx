@@ -240,7 +240,7 @@ const Events = () => {
                 
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Applications for the inaugural awards will open <strong className="text-foreground">December 21, 2025</strong>, 
+                    Applications for the inaugural awards will open <strong className="text-foreground">January 10, 2026</strong>, 
                     with the first list of awardees announced on <strong className="text-foreground">March 21, 2026</strong>.
                   </p>
 
