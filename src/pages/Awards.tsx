@@ -50,32 +50,7 @@ const Awards = () => {
         </div>
       </section>
 
-      {/* Science Leadership Awards */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-gold rounded-xl flex items-center justify-center">
-                <Users className="text-white" size={32} />
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold text-foreground">Science Leadership Awards</h2>
-                <p className="text-muted-foreground">Recognising Visionary Leadership</p>
-              </div>
-            </div>
 
-            <Card className="border-primary/30 shadow-lg">
-              <CardContent className="pt-6">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="awandare">
-                    <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary">
-                      Gordon A. Awandare Science Leadership Award
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
-                      The Gordon A. Awandare Science Leadership Award celebrates the spirit of visionary leadership and relentless dedication exemplified by Professor Gordon Awandare. It honors those who drive scientific innovation and transformative research, inspiring communities and empowering Africa's future in science.
-                    </AccordionContent>
-                  </AccordionItem>
-      </section>
 
       {/* Excellence Awards */}
       <section className="py-16 bg-muted/30">
