@@ -55,16 +55,6 @@ const Governance = () => {
                     <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
                   </div>
 
-                  {/* Dr Victoria Cornelius */}
-                  <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
-                    <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
-                      <AvatarImage src={vikkiCorneliusImage} alt="Dr Vikki Cornelius" className="object-cover" />
-                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-2xl font-bold">VC</AvatarFallback>
-                    </Avatar>
-                    <h3 className="text-lg font-semibold text-foreground">Dr Vikki Cornelius</h3>
-                    <p className="text-sm text-muted-foreground">Advisory Committee Member</p>
-                  </div>
-
                   {/* Prof Lucas Amenga-Etego */}
                   <div className="flex flex-col items-center text-center p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 transition-colors">
                     <Avatar className="w-32 h-32 mb-4 ring-4 ring-primary/10">
