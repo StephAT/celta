@@ -78,6 +78,15 @@ const Awards = () => {
                 communities and empowering Africa's future in science.
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="Anang">
+              <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary">
+                Abraham K. M. Anang Science Leadership Award
+               </AccordionTrigger>
+               <AccordionContent className="text-muted-foreground">
+                Honours leaders whose work has significantly advanced genomic science, data-driven research, and international scientific collaboration.
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </CardContent>
       </Card>
